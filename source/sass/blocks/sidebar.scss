@@ -1,0 +1,78 @@
+// Sidebar
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 34px;
+  background-color: #777;
+
+  @media (max-width: 926px) {
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.sidebar-nav__list {
+  max-width: 203px;
+  margin-right: 21px;
+  margin-left: 13px;
+
+  @media (max-width: 926px) {
+    max-width: 100%;
+  }
+}
+
+.toggle {
+  display: none;
+
+  @media (max-width: 926px) {
+    display: block;
+    width: 100%;
+    max-width: 35px;
+    min-height: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-image: url("..//img/icons/opened.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.open {
+  width: 100%;
+  max-width: 35px;
+  min-height: 35px;
+  cursor: pointer;
+  background-image: url("..//img/icons/closed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+  @media (max-width: 926px) {
+    display: none;
+  }
+}
+
+.nojs {
+  display: block;
+}
+
+.sidebar-nav__list-item-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.sidebar-nav__list-item-link:hover {
+  color: #000;
+}

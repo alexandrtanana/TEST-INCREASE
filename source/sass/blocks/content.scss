@@ -1,0 +1,141 @@
+// Content
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 755px;
+  margin-left: 20px;
+
+  @media (max-width: 926px) {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+// ___Top___
+.content-top {
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  color: #777;
+  background-color: #dcdcdc;
+}
+
+.content-top__desc {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (max-width: 534px) {
+    margin-bottom: 15px;
+  }
+}
+
+.content-top__div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  margin-bottom: 23px;
+
+  @media (max-width: 534px) {
+    padding-left: 0;
+  }
+}
+
+.content-top__div-text {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.content-top__div-wrap {
+  display: flex;
+}
+
+.content-top__div-wrap span {
+  display: block;
+  width: 3px;
+  height: 3px;
+  margin-top: 10px;
+  margin-right: 7px;
+  background-color: #777;
+}
+
+.content-top__text {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+// ___Center___
+.content-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  margin-top: 20px;
+
+  @media (max-width: 1050px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 534px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 315px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-center__card {
+  display: grid;
+  width: 100%;
+  max-width: 135px;
+  min-height: 150px;
+  margin-bottom: 20px;
+  background-color: #dcdcdc;
+}
+
+// ___Bottom___
+.content-bottom {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 621px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.content-bottom__div {
+  max-width: 335px;
+  background-color: #dcdcdc;
+
+  @media (max-width: 621px) {
+    max-width: 100%;
+  }
+}
+
+.content-bottom__div-text {
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #777;
+}
+
+.content-bottom__div:not(:last-child) {
+  margin-right: 18px;
+
+  @media (max-width: 621px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

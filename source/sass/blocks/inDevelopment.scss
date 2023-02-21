@@ -1,0 +1,21 @@
+// inDevelopment
+.inDevelopment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #dcdcdc;
+
+  @media (max-width: 926px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-left: 0;
+  }
+}
+
+.container-development {
+  display: flex;
+}

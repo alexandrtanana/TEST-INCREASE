@@ -1,0 +1,141 @@
+// Footer
+.footer {
+  display: flex;
+  margin-right: 70px;
+  margin-left: 70px;
+
+  @media (max-width: 767px) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @media (max-width: 480px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  padding-top: 23px;
+  padding-bottom: 19px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+
+  @media (max-width: 621px) {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.footer-div {
+  display: flex;
+  width: 100%;
+  max-width: 296px;
+  background-color: #777;
+
+  @media (max-width: 621px) {
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-div__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.footer-div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-div__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 190px;
+  margin-top: 13px;
+  margin-right: 25px;
+  margin-bottom: 19px;
+  margin-left: 23px;
+}
+
+.footer-div__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 620px) {
+    align-items: center;
+  }
+}
+
+.footer-div__list-item {
+  display: flex;
+}
+
+.footer-div__list-item-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.footer-div__list-item-link:hover {
+  color: #000;
+}
+
+.link-color {
+  color: #ffffffa0;
+}
+
+.link-color:hover {
+  color: #ffffffa0;
+}
+
+.footer-div__list-item-link span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  background-color: #fff;
+}
+
+.div-list {
+  margin-top: 14px;
+  margin-right: 20px;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 308px;
+  min-height: 178px;
+
+  @media (max-width: 620px) {
+    max-width: 100%;
+  }
+}
+
+.footer-right-div {
+  width: 100%;
+  min-height: 79px;
+  background-color: #777;
+}
+
+.footer-right-div:not(:last-child) {
+  margin-bottom: 10px;
+}
